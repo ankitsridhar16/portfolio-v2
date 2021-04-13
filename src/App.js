@@ -9,7 +9,9 @@ import {
   Text,
   Center,
   Container,
-  Spacer
+  Spacer,
+  Button,
+  ArrowForwardIcon
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import About from './components/About';
@@ -26,8 +28,15 @@ function App() {
               <Heading bgGradient="linear(to-l, #7928CA,#FF0080)" bgClip="text" size="xl">Ankit Sridhar</Heading>
           </Box>
           <Spacer />
+          <Box p="2" alignItems="left">
+          <Button colorScheme="teal" variant="outline">
+          Call us
+        </Button>
           <ColorModeSwitcher/>
-          </Flex>
+          </Box>
+          
+          
+        </Flex>
         <Grid minH="100vh" p={3}>
           
           <About/>

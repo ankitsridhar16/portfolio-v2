@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container,Box,Image,Center,Text,Divider,UnorderedList,ListItem } from "@chakra-ui/react";
+import { Container,Box,Image,Center,Text,Divider,UnorderedList,ListItem, Link } from "@chakra-ui/react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faInstagram,faGithub,faLinkedin,faTwitter,faDev} from "@fortawesome/free-brands-svg-icons"
 function About() {
@@ -15,14 +15,13 @@ function About() {
                     />
                 </Center>
                 <Text fontSize="3xl" padding="4"><strong>About me 👋</strong></Text>
-                <Text p="2">
-                I am a Fullstack Engineer who programs elegant Frontend & Backend apps for web 2.0 
+                <Text p="2" fontSize="xl">
+                Engineer who likes to program full stack apps for the modern web 
                 </Text>
                 <UnorderedList>
-                <ListItem p="2" align="left">Full Stack Engineer @ Imgur</ListItem>
-                <ListItem p="2" align="left">Worked in the development of Low latency & distributed systems in the domain of High Frequency Trading</ListItem>
-                <ListItem p="2" align="left">Built POC with leveraging Deep Learning for Image Classification & Object Detection</ListItem>
-                <ListItem p="2" align="left">Lorem ipsum dolor sit amet</ListItem>
+                <ListItem p="2" fontSize="large" align="left">Full Stack Engineer @ <Link href="https://imgur.com">Imgur Inc</Link></ListItem>
+                <ListItem p="2" fontSize="large" align="left">Worked in the development of Low latency & distributed systems in the domain of Algorithmic and High Frequency Trading</ListItem>
+                <ListItem p="2" fontSize="large" align="left">Developed & built POC's leveraging Deep Learning for Image Classification & Object Detection tasks</ListItem>
                 </UnorderedList>
                 <Divider />
                 <Text fontSize="2xl" padding="2">
